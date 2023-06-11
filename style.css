@@ -1,0 +1,289 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #443a99,#3b3099);
+}
+body{
+    background-image: linear-gradient(to bottom, white,white);
+
+}
+main{background-image: linear-gradient(to bottom, white,#43399A);}
+footer{
+    background-image: linear-gradient(to bottom, #453d94, #170f5a);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr ; /*faz a divisão das colunas*/
+    align-items: center;
+    grid-gap: 10px; /*faz a quebra da linhaa*/
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    border: #727272;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    #itensMaisVistos{
+        display: none;
+    }
+    #cardPrincipal{
+        width: 100%;
+    }
+    #buscaRapida{
+        display: none;
+    }
+    #carrosel{
+        width: 100%;
+    }
+    #textCabeçalho{
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #textCabeçalho{
+        display: none;
+    }
+    #buscaRapida{
+        display: none;
+    }
+    #carrosel{
+        width: 100%;
+    }
+    #meuCarrinho{
+        display: none;
+    }
+}
+
+/*Fim medias*/
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-select-sm{
+    width: 190px;
+    margin-bottom: 15px;
+}
+
+#fimPagina{
+    background-color: #0f0942;
+}
+
+#imgsBarraLateral{
+    width: -webkit-fill-available;
+}
+
+#meuCarrinho{
+    text-decoration: none;
+    color: black;
+}
+
+#cardPrincipal{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#cardPrincipal img{
+
+    object-fit: scale-down;
+    background-color: white;
+    height: 20em;
+}
+
+#cardPrincipal .card:hover{
+
+    transform: scale(1.05);
+    border-radius: 10px;
+    transition-duration: 1.5s;
+
+}
+
+#cardPrincipal .card{
+
+    transform: scale(1);
+    transition-duration: 1.5s;
+
+}
+
+#cardPrincipal .card-text {
+    height: 4em;
+    overflow: hidden;
+    line-height: 1em;
+}
+
+
+#cardPrincipal .card-text::after{
+
+    content: '...';
+
+}
+
+#cardPrincipal .card-title{
+
+    height: 3em;
+    overflow: hidden;
+    line-height: 1em;
+
+}
+
+#cardPrincipal p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+#cardPrincipal .details,#cardPrincipal .price-detail{
+
+    margin-top:0.5em
+
+}
+
+#cardPrincipal .card{
+
+    max-width: 20em;
+    box-shadow: 1px 6px 19px 0px #212121;
+
+}
+
+#cardPrincipal .card-body{
+
+    max-width: 20em;
+
+}
+
+
+#cardPrincipalCarregamento{
+
+    display: none;
+
+}
+
+.gray-square{
+
+
+    background-color: gray;
+    height: 20em;
+    width: 15em;
+
+}
+
+#catalogo{
+
+    display:flex;
+    justify-content: center;
+
+}
+
+.product-div{
+
+    display:flex;
+
+    flex-direction: row;
+
+    justify-content: center;
+
+    width: 80%;
+}
+
+.product-div img{
+
+    object-fit: scale-down;
+    max-height: 40em;
+
+}
+
+.nav-pages{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.page-link{
+
+    font-size: 2em !important;
+    padding: 0em 1em !important;
+    color: #6610f2 !important;
+
+}
+
+#catalogo img{
+
+    object-fit: fill;
+    max-height: 40em;
+    background-color: transparent;
+    margin: 2em;
+    box-shadow: -2px 7px 20px 0px #212121;
+    border-radius: 10px;
+    transform: scale(1);
+    transition-duration: 1.5s;
+
+}
+
+#catalogo img:hover{
+
+    transform: scale(1.05);
+    border-radius: 10px;
+    transition-duration: 1.5s;
+
+}
+
+#precoMaisVistos{
+
+    background-color: var(--bs-btn-color);
+    color: wheat;
+
+}
+
+#catalogo .infos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#catalogo p,#catalogo a{
+
+    font-size: 1.4em;
+
+}
+
+#catalogo #precoMaisVistos:hover{
+
+    transform: scale(1.05);
+    border: #2464c4 5px solid;
+    transition-duration: 1s;
+
+}
+
+#catalogo #precoMaisVistos{
+
+    transform: scale(1);
+    transition-duration: 1s;
+
+}

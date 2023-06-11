@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisas Dahora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="imagens/logo.png" class="d-block w-100" alt="LogoPagina">
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="container m-2 p-2">
+                        <div class="row">
+                            <p class="fs-5" id="textWelcome">Bem vindo ao Camisas Dahora!</p>
+                        </div>
+
+                        <div class="row">
+
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="text" id="textoPesquisa" placeholder="Pesquisar"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="button" id="btnPesquisar">Pesquisar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+
+                    <div class="row">
+                        <div class="row linha">
+                            <nav class="navbar navbar-expand-lg ">
+                                <div class="container-fluid">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                        <div class="navbar-nav">
+                                            <a class="nav-link" href="index.html">Inicio</a>
+                                            <a class="nav-link" href="#">Login</a>
+                                            <a class="nav-link" href="#">Rastrear Pedido</a>
+                                            <a class="nav-link" href="#">Política de troca e Devolução</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8" id="textCabeçalho">
+                                <div class="row">
+                                    <p class="textoCabeçalho mb-0">Pague na Entrega | 30 dias de retorno</p>
+                                </div>
+                                <div class="row">
+                                    <p>24h de Atendimento ao Cliente.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 linha">
+                                <a class="icon-link icon-link-hover" id="meuCarrinho" href="#"> <i class="bi bi-cart3"
+                                        style="font-size: 2rem;"></i>Meu Carinho</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <div class="caixa-pesquisa p-2 bg-white rounded border border-black" id="buscaRapida">
+
+                        <h4 class="titulo">Busca rápida</h4>
+                        <select id="selectCategories"class="form-select mb-2 form-select-sm" aria-label=".form-select-lg example">
+
+                        </select>
+
+                        <div class="mx-auto " style="width: 110px;">
+                            <button type="button" id="selectPesquisar" class="btn btn-outline-success btn-sm mb-3">Pesquisar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-9" id="carrosel">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagens/primeiroCarrosel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/segundoCarrosel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagens/terceiroCarrosel.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5">
+
+            <div class="row">
+
+                <div class="col-sm-9" id="cardPrincipal">
+                  
+                </div>
+
+                <div class="col-sm-9" id="cardPrincipalCarregamento">
+                    <div class="col-sm-4 p-2 div-card">
+                        <div class="card">
+                            <div class="gray-square" >
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">...</h5>
+                                <p class="card-text">...</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary price-detail">...</a>
+                                    <a href="#" class="btn btn-primary details">...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 p-2 div-card">
+                        <div class="card">
+                            <div class="gray-square" >
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">...</h5>
+                                <p class="card-text">...</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary price-detail">...</a>
+                                    <a href="#" class="btn btn-primary details">...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 p-2 div-card">
+                        <div class="card">
+                            <div class="gray-square" >
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">...</h5>
+                                <p class="card-text">...</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary price-detail">...</a>
+                                    <a href="#" class="btn btn-primary details">...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="row mt-2 bg-white rounded" id="itensMaisVistos">
+
+                        <h5 class="card-title text-center p-3">Itens mais vistos</h5>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 ">
+                                <img src="imagens/ImgPMalucoPutaço.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col">
+                                <p>O maluco ta putaço.</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 mt-3">
+                                <img src="imagens/ImgPAsQuartasUsamosOdio.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col mt-3">
+                                <p>Às quartas usamos ódio. </p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 mt-3">
+                                <img src="imagens/ImgPBebedaMamae.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col mt-3">
+                                <p>Bebê da mamãe.</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 mt-3">
+                                <img src="imagens/ImgPEuTreinoFofo.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col mt-3">
+                                <p> Eu treino fofo.</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 mt-3">
+                                <img src="imagens/ImgPOdontoPorAmor.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col mt-3">
+                                <p>Odonto Por Amor.</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <div id="maisVistos" class="row">
+                            <div class="col-5 mt-3">
+                                <img src="imagens/ImgPtenhoMedoDeBarata.png" id="imgsBarraLateral" alt="">
+                            </div>
+                            <div class="col mt-3">
+                                <p>Tenho medo de barata.</p>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star-half" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <i class="bi bi-star" style="font-size: 1rem; color:rgb(220, 190, 84);"></i>
+                                <p><a href="#" id="precoMaisVistos" class="btn btn-outline-primary">R$59,99</a></p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col">
+                            <button type="submit" id="btnCarregarMais" class="btn btn-outline-primary my-2">Carregar
+                                mais...</button>
+                        </div> -->
+
+                    </div>
+
+                    <div class="row mt-3 bg-white rounded">
+                        <div class="col">
+                            <p class="text-black p-1 ">Receba nossas novidades pelo email</p>
+                            <form action="">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                    aria-describedby="emailHelp">
+                                <button type="submit" class="btn btn-outline-success my-2">Login</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example" class="nav-pages">
+                <input type="hidden" id="actualpage"/>
+                <ul class="pagination" id="pagination">
+                    
+                </ul>
+            </nav>
+
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row p-5">
+                <div class="col-sm-3 mb-3">
+                    <p class="text-center text-light fs-5"><strong>Formas de Pagamento</strong></p>
+                    <ul class="list-unstyled text-center">
+                        <img title="Pix" src="https://montink.com/assets/img/logo_pix.png"
+                            style="width: 38px; height: 24px; margin: 10px;" alt="Pix"><img title="Boleto"
+                            src="//cdn.shopify.com/s/assets/payment_icons/boleto-50666ca3aee193c64e41a2803fe4a6d6c5e1a27d03c5e44ce97e3aa82fb6deb2.svg"
+                            style="margin: 10px;" alt="Boleto"><img title="American Express"
+                            src="//cdn.shopify.com/s/assets/payment_icons/american_express-2264c9b8b57b23b0b0831827e90cd7bcda2836adc42a912ebedf545dead35b20.svg"
+                            style="margin: 10px;" alt="American Express">
+                        <li class="mb-2"><img title="Diners Club"
+                                src="//cdn.shopify.com/s/assets/payment_icons/diners_club-16436b9fb6dd9060edb51f1c7c44e23941e544ad798282d6aef1604319562fba.svg"
+                                style="margin: 10px;" alt="Diners Club"><img title="Master"
+                                src="//cdn.shopify.com/s/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+                                style="margin: 10px;" alt=""></li>
+                        <li class="mb-2"><img title="Visa"
+                                src="//cdn.shopify.com/s/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                                style="width: 51px; margin: 10px;" alt="Visa"></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p class="text-center text-light fs-5"><strong>Links Rápidos</strong></p>
+                    <ul class="list-unstyled  text-center">
+                        <li class="mb-2"><a href="#">Ajuda</a></li>
+                        <li class="mb-2"><a href="#">Política de compras</a></li>
+                        <li class="mb-2"><a href="#">Cancelamento e Devoluções</a></li>
+                        <li class="mb-2"><a href="#">Perguntas frequentes</a></li>
+                        <li class="mb-2"><a href="#">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#">Isenção de responsabilidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p class="text-center text-light fs-5"><strong>Redes Socias</strong></p>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-2"><a href=""><i class="bi bi-instagram"> </i> Instagram</a></li>
+
+                        <li class="mb-2"><a href=""><i class="bi bi-facebook"> </i> Facebook</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p class="text-center text-light fs-5"><strong>Nossos Contatos</strong></p>
+                    <ul class="list-unstyled text-center">
+                        <li class="mb-2"><a href=""><i class="bi bi-geo-alt"> </i> Rua inexistente 255, Belo Horizonte,
+                                MG </a></li>
+                        <li class="mb-2"><a href=""><i class="bi bi-envelope"> </i> contato@stillstyled.com</a></li>
+                        <li class="mb-2"><a href=""><i class="bi bi-whatsapp"></i> (31) 98946-7070</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="justify-content-center" id="fimPagina">
+                    <p class="text-center text-light p-2">Trabalho da disciplina de
+                        Desenvolvimento de Interfaces Web do Curso de ADS <br>
+                        Aluna: Adrielly Coelho Julião - Matrícula: 789859 <br>
+                        Copyright 2023 - ICEI PUC Minas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <script src="maisVistos.js"></script>
+    <script src="pesquisa.js"></script>
+</body>
+
+</html>
